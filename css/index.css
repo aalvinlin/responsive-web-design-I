@@ -371,7 +371,7 @@ footer {
 
 
 /* Media queries for tablet view */
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
 
     header
     {
@@ -477,20 +477,12 @@ footer {
 
 
 /* Media queries for services page */
-/* 
-@media only screen and (max-width: 600px) {
 
-	header, nav
-	{
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
+/* tablet view: no new CSS needed. Same CSS as index page's tablet media query */
 
-	header a
-	{
-		width: 600px;
-	}
+/* mobile view: make service boxes display in a column */
+
+@media only screen and (max-width: 500px) {
 
 	#facts_container
 	{
@@ -509,4 +501,4 @@ footer {
 		width: 80%;
 	}
 
-  } */
+  }
