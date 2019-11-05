@@ -65,10 +65,148 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-
 body {
 	text-align: center;
 }
+
+header {
+	width: 100%;
+	margin: 0;
+
+}
+
+header img {
+	margin: 10px auto;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+
+	margin-bottom: 20px;
+}
+
+header nav a {
+	width: 100%;
+	border-bottom: 2px solid #CCCCCC;
+	line-height: 2em;
+
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+header nav a:first-child {
+	border-top: 2px solid #CCCCCC;
+}
+
+
+header nav a:hover, header nav a:active {
+	background-color: #EEEEEE;
+}
+
+#intro div {
+	margin: 0px auto;
+	margin-bottom: 40px;
+
+	width: 95%;
+	height: 18vh;
+
+	border-bottom: 1px solid black;
+
+}
+
+#intro a {
+		
+	display: inline-block;
+	width: 33%;
+
+	font-size: 10px;
+	line-height: 2em;
+
+	border: 1px solid black;
+
+	text-decoration: none;
+
+	color: black;
+}
+
+#intro a:hover, #intro a:active {
+	background-color: #EEEEEE;
+}
+
+#intro img {
+	display: none;
+}
+
+#intro h1 {
+	margin-top: 0px;
+	font-size: 32px;
+}
+
+
+/* === CSS for middle of index page === */
+
+#description {
+	
+	border-bottom: 1px solid black;
+
+	text-align: left;
+
+	width: 90%;
+	margin: 0px auto;
+}
+
+#description p{
+	margin-bottom: 40px;
+}
+
+
+#description p:last-child{
+	margin-bottom: 20px;
+}
+
+#two_across_parent, #three_across_parent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#description img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* === CSS for footer === */
+
+footer {
+	text-align: left;
+	font-family: Kodchasan;
+
+	padding: 5%;
+	margin: 20px auto;
+}
+
+#copyright {
+
+	margin-top: 30px;
+
+	font-size: 10px;
+	text-align: center;
+}
+
+
+/* #two_across_parent, #three_across_parent {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.two_across, .three_across {
+	width: 100%;
+} */
+
+
+/*
+
 
 header, body > section, footer {
 	width: 90%;
@@ -87,7 +225,6 @@ header nav {
 
 	display: flex;
 	justify-content: stretch;
-	/* flex-wrap: wrap; */
 	
 	width: 70%;
 
@@ -110,10 +247,6 @@ header nav a {
 
 	color: #999999;
 }
-
-/* header nav a:first-child(){
-	margin-left: 0px;
-} */
 
 header nav a:hover, header nav a:active {
 	text-decoration: none;
@@ -154,7 +287,11 @@ header nav a:hover, header nav a:active {
 	color: black;
 }
 
+*/
+
 /* === CSS for "Innovation on Demand" text and circular image === */
+
+/* 
 
 #intro {
 	display: flex;
@@ -192,11 +329,11 @@ p {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	text-align: left;
-}
+} */
 
 /* === CSS for Services page, top part === */
 
-#services_intro {
+/* #services_intro {
 	text-align: left;
 }
 
@@ -287,7 +424,7 @@ p {
 	background-color: #CCCCCC;
 	color: black;
 	text-decoration: none;
-}
+} */
 
 #facts_container {
 	width: 90%; 
@@ -334,43 +471,10 @@ p {
 }
 
 
-/* === CSS for middle of index page === */
-
-#two_across_parent, #three_across_parent {
-	display: flex;
-	justify-content: space-between;
-}
-
-.two_across {
-	width: 48%;
-	
-}
-
-.three_across {
-	width: 30%;
-	
-}
-
-#description img {
-	width: 100%;
-	margin: 20px auto;
-}
-
-/* === CSS for footer === */
-
-footer {
-	text-align: left;
-	font-family: Kodchasan;
-
-}
-
-#copyright {
-	font-size: 10px;
-	text-align: center;
-}
-
-
 /* Media queries for tablet view */
+
+/*
+
 @media (max-width: 800px) {
 
     header
@@ -415,6 +519,8 @@ footer {
 
   }
 
+*/
+
 /* Media queries for mobile view */
 
 @media (max-width: 500px) {
@@ -424,54 +530,6 @@ footer {
         flex-direction: column;
         width: 95%;
     } */
-
-    header {
-        width: 100%;
-        margin: 0;
-
-    }
-
-    header img {
-        margin: 10px auto;
-    }
-
-    header nav {
-        flex-direction: column;
-    }
-
-    header nav a {
-        width: 100%;
-        border-bottom: 2px solid #CCCCCC;
-    }
-
-    header nav a:first-child {
-        border-top: 2px solid #CCCCCC;
-    }
-
-    #intro div {
-        width: 100%;
-        height: 20vh
-    }
-
-    #intro h1 {
-        margin-top: 0px;
-    }
-
-	#intro h1 {
-		font-size: 32px;
-	}
-
-
-	#two_across_parent, #three_across_parent {
-		flex-wrap: wrap;
-	}
-
-	.two_across, .three_across {
-		width: 100%;
-	}
-
-
-  }
 
 
 
